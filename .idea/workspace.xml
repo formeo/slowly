@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="59a00f96-523f-40a6-ab5a-33026155c7b1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="/usr/lib/go-1.15" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1keTgs5IXDXHESZfesXfHplAXYT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../new_order" />
+  </component>
+  <component name="RunManager">
+    <configuration name="go build slowly" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="slowly" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="183" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606060188681">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="418" y="183" width="1084" height="708" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1047@0.0.1920.1047" timestamp="1606060188681" />
+    <state x="741" y="281" width="430" height="481" key="FileChooserDialogImpl" timestamp="1606060825518">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="741" y="281" width="430" height="481" key="FileChooserDialogImpl/0.0.1920.1047@0.0.1920.1047" timestamp="1606060825518" />
+    <state width="1878" height="279" key="GridCell.Tab.0.bottom" timestamp="1606063932010">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1047@0.0.1920.1047" timestamp="1606063932010" />
+    <state width="1878" height="279" key="GridCell.Tab.0.center" timestamp="1606063932010">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="279" key="GridCell.Tab.0.center/0.0.1920.1047@0.0.1920.1047" timestamp="1606063932010" />
+    <state width="1878" height="279" key="GridCell.Tab.0.left" timestamp="1606063932009">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="279" key="GridCell.Tab.0.left/0.0.1920.1047@0.0.1920.1047" timestamp="1606063932009" />
+    <state width="1878" height="279" key="GridCell.Tab.0.right" timestamp="1606063932010">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="279" key="GridCell.Tab.0.right/0.0.1920.1047@0.0.1920.1047" timestamp="1606063932010" />
+    <state width="1878" height="344" key="GridCell.Tab.1.bottom" timestamp="1606062048072">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="344" key="GridCell.Tab.1.bottom/0.0.1920.1047@0.0.1920.1047" timestamp="1606062048072" />
+    <state width="1878" height="344" key="GridCell.Tab.1.center" timestamp="1606062048072">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="344" key="GridCell.Tab.1.center/0.0.1920.1047@0.0.1920.1047" timestamp="1606062048072" />
+    <state width="1878" height="344" key="GridCell.Tab.1.left" timestamp="1606062048071">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="344" key="GridCell.Tab.1.left/0.0.1920.1047@0.0.1920.1047" timestamp="1606062048071" />
+    <state width="1878" height="344" key="GridCell.Tab.1.right" timestamp="1606062048072">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state width="1878" height="344" key="GridCell.Tab.1.right/0.0.1920.1047@0.0.1920.1047" timestamp="1606062048072" />
+    <state x="556" y="196" width="803" height="655" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606061133841">
+      <screen x="0" y="0" width="1920" height="1047" />
+    </state>
+    <state x="556" y="196" width="803" height="655" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1047@0.0.1920.1047" timestamp="1606061133841" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/main.go</url>
+          <line>52</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
