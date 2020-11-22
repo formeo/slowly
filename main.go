@@ -2,6 +2,8 @@ package main
 
 import (
 	"encoding/json"
+	"io"
+	"log"
 	"net/http"
 	"time"
 )
@@ -22,7 +24,8 @@ type ErrorResponse struct {
 func heathcheck(w http.ResponseWriter, r *http.Request) {
 
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte(`{"heathcheck": "ok"}`))
+	w.Header().Set("Content-Type", "application/json")
+	io.WriteString(w, `{"alive": true}`)
 }
 
 func Middleware(h http.Handler) http.Handler {
@@ -31,9 +34,9 @@ func Middleware(h http.Handler) http.Handler {
 		_ = json.NewDecoder(r.Body).Decode(&postTimeout)
 		if postTimeout.Timeout > 5000 {
 
-			w.WriteHeader(http.StatusForbidden)
-			w.Header().Add("Content-Type", "application/json")
-			json.NewEncoder(w).Encode(map[string]interface{}{"error": "timeout too long"})
+			w.WriteHeader(http.StatusBadRequest)
+			w.Header().Set("Content-Type", "application/json")
+			io.WriteString(w, `{"error":"timeout too long"}`)
 			return
 
 		}
@@ -62,15 +65,24 @@ func returnPost(w http.ResponseWriter, r *http.Request) {
 	}
 
 }
-
-func main() {
+func startServer(){
 	router := mux.NewRouter()
 	router.HandleFunc("/heathcheck", heathcheck).Methods("GET")
 	router.HandleFunc("/api/slow", returnPost).Methods("POST")
 	router.Use(Middleware)
-	err := http.ListenAndServe(":8000", router)
-	if err != nil {
-		panic(err)
+	srv := &http.Server{
+		Handler: router,
+		Addr:    "127.0.0.1:8000",
+		// Good practice: enforce timeouts for servers you create!
+		WriteTimeout: 15 * time.Second,
+		ReadTimeout:  15 * time.Second,
 	}
+
+	log.Fatal(srv.ListenAndServe())
+
+}
+
+func main() {
+	startServer()
 
 }
