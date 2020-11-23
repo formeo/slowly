@@ -33,7 +33,7 @@ func TestPostError(t *testing.T) {
 	go server.NewServer(router)
 
 	client := &http.Client{
-		Timeout: 1 * time.Second,
+		Timeout: 10 * time.Second,
 	}
 
 	mcPostBody := map[string]interface{}{
