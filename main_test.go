@@ -3,6 +3,9 @@ package main
 import (
 	"bytes"
 	"encoding/json"
+	router2 "github.com/formeo/slowly/pkg/router"
+	"github.com/formeo/slowly/pkg/server"
+	"github.com/formeo/slowly/pkg/views"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
@@ -12,22 +15,23 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-
 func TestPostOk(t *testing.T) {
 	mcPostBody := map[string]interface{}{
 		"timeout": 6,
 	}
 	body, _ := json.Marshal(mcPostBody)
-	r,_ := http.NewRequest("POST", "api/slow",  bytes.NewReader(body))
+	r, _ := http.NewRequest("POST", "api/slow", bytes.NewReader(body))
 	w := httptest.NewRecorder()
 
-	returnPost(w,r)
+	views.ReturnPostWithParamTimeout(w, r)
 	assert.Equal(t, http.StatusOK, w.Code)
 	assert.Equal(t, []byte(`{"status":"ok"}`), w.Body.Bytes())
 }
 
 func TestPostError(t *testing.T) {
-	go startServer()
+	router := router2.NewRouter()
+	go server.NewServer(router)
+
 	client := &http.Client{
 		Timeout: 1 * time.Second,
 	}
