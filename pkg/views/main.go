@@ -17,13 +17,8 @@ func ReturnPostWithParamTimeout(w http.ResponseWriter, r *http.Request) {
 		Status: "ok",
 	}
 
-	jsonResponse, _ := json.Marshal(response)
-
 	w.Header().Set("Content-Type", "application/json")
-	_, err := w.Write(jsonResponse)
-
-	if err != nil {
-		panic(err)
-	}
+	w.WriteHeader(http.StatusOK)
+	json.NewEncoder(w).Encode(response)
 
 }
